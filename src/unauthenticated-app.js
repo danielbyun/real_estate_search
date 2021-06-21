@@ -1,7 +1,7 @@
 import React from 'react'
 
-const LoginForm({onSubmit, submitButton}) => {
-  
+const LoginForm = ({onSubmit, submitButton}) => {
+  return <div></div>
 }
 
 const UnauthenticatedApp = () => {
