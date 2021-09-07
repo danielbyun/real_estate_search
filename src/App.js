@@ -8,7 +8,8 @@ const UnauthenticatedApp = React.lazy(() => import('./unauthenticated-app'))
 
 const App = () => {
   return (
-    <React.Suspense fallback=''>
+    <React.Suspense fallback={null}>
+      <AuthenticatedApp />
       <UnauthenticatedApp />
     </React.Suspense>
   )
