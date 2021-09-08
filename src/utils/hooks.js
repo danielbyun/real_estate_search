@@ -110,4 +110,10 @@ const useLocalStorage = (
   return [state, setState]
 }
 
-export {useAsync, useLocalStorage}
+const useDocumentTitle = (initialValue = '') => {
+  React.useEffect(() => {
+    document.title = initialValue
+  }, [initialValue])
+}
+
+export {useAsync, useLocalStorage, useDocumentTitle}
