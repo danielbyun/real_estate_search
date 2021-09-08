@@ -1,9 +1,8 @@
-/** @jsx jsx */
-import {jsx} from '@emotion/core'
+/** @jsxImportSource @emotion/react */
 
 import {Link as RouterLink} from 'react-router-dom'
 import styled from '@emotion/styled/macro'
-import {keyframes} from '@emotion/core'
+import {keyframes} from '@emotion/react'
 import * as colors from 'styles/colors'
 import * as mq from 'styles/media-queries'
 import {Dialog as ReachDialog} from '@reach/dialog'
@@ -100,7 +99,8 @@ function FullPageSpinner() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-      }}>
+      }}
+    >
       <Spinner />
     </div>
   )
@@ -124,13 +124,15 @@ function ErrorMessage({error, variant = 'stacked', ...props}) {
     <div
       role='alert'
       css={[{color: colors.danger}, errorMessageVariants[variant]]}
-      {...props}>
+      {...props}
+    >
       <span>There was an error: </span>
       <pre
         css={[
           {whiteSpace: 'break-spaces', margin: '0', marginBottom: -5},
           errorMessageVariants[variant],
-        ]}>
+        ]}
+      >
         {error.message}
       </pre>
     </div>
@@ -148,7 +150,8 @@ function FullPageErrorFallback({error}) {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-      }}>
+      }}
+    >
       <p>Uh oh... There's a problem. Try refreshing the app.</p>
       <pre>{error.message}</pre>
     </div>
