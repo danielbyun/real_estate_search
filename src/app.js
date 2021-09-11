@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-
 import * as React from 'react'
 import {useAuth} from 'context/auth-context'
 import {FullPageSpinner} from 'components/lib'

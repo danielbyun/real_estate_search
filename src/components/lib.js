@@ -122,7 +122,7 @@ const errorMessageVariants = {
 function ErrorMessage({error, variant = 'stacked', ...props}) {
   return (
     <div
-      role='alert'
+      role="alert"
       css={[{color: colors.danger}, errorMessageVariants[variant]]}
       {...props}
     >
@@ -142,7 +142,7 @@ function ErrorMessage({error, variant = 'stacked', ...props}) {
 function FullPageErrorFallback({error}) {
   return (
     <div
-      role='alert'
+      role="alert"
       css={{
         color: colors.danger,
         height: '100vh',

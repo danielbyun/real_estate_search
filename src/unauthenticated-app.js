@@ -31,12 +31,12 @@ const LoginForm = ({onSubmit, submitButton}) => {
       }}
     >
       <FormGroup>
-        <label htmlFor='username'>Username</label>
-        <Input id='username' />
+        <label htmlFor="username">Username</label>
+        <Input id="username" />
       </FormGroup>
       <FormGroup>
-        <label htmlFor='password'>Password</label>
-        <Input id='password' type='password' />
+        <label htmlFor="password">Password</label>
+        <Input id="password" type="password" />
       </FormGroup>
       <div>
         {React.cloneElement(
@@ -79,23 +79,23 @@ const UnauthenticatedApp = () => {
       >
         <Modal>
           <ModalOpenButton>
-            <Button variant='primary'>Login</Button>
+            <Button variant="primary">Login</Button>
           </ModalOpenButton>
-          <ModalContents aria-label='Login form' title='Login'>
+          <ModalContents aria-label="Login form" title="Login">
             <LoginForm
               onSubmit={login}
-              submitButton={<Button variant='primary'>Login</Button>}
+              submitButton={<Button variant="primary">Login</Button>}
             />
           </ModalContents>
         </Modal>
         <Modal>
           <ModalOpenButton>
-            <Button variant='secondary'>Register</Button>
+            <Button variant="secondary">Register</Button>
           </ModalOpenButton>
-          <ModalContents aria-label='Registration form' title='Register'>
+          <ModalContents aria-label="Registration form" title="Register">
             <LoginForm
               onSubmit={register}
-              submitButton={<Button variant='secondary'>Register</Button>}
+              submitButton={<Button variant="secondary">Register</Button>}
             />
           </ModalContents>
         </Modal>
